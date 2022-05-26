@@ -20,7 +20,7 @@ class Queue {
       this.first = newNode;
       this.last = newNode;
     } else {
-      this.last.next = newNode;
+      this.last.next = newNode; // In here don't touch the pointer of first because we dont' want to do with anything with this.frist that's why he took this.last.next = newNode took .
       this.last = newNode;
     }
     this.length++;
